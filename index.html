@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="final" style="display: none;">
+        <h2>Final Result</h2>
+        <p class="score"></p>
+        <h4>Try again</h4>
+        <button class="again">Again</button>
+    </div>
+    <div class="quiz" style="display: none;">
+        <div class="count">
+            <p class="current"></p>
+            <p class=""></p>
+            <p class="total"></p>
+        </div>
+        <h3 id="questions">Questions</h3>
+        <label id="a1" class="container"></label>
+        <label id="a2" class="container"></label>
+        <label id="a3" class="container"></label>
+        <label id="a4" class="container"></label>
+        <button id="next">Submit</button>
+    </div>
+    <div class="setting">
+        <h2>Quiz Setting</h2>
+        <label for="category" class="category">Select Category</label>
+        <select name="" id="category">
+            <option value="">Any Category</option>
+            <option value="23">History</option>
+            <option value="24">Politics</option>
+            <option value="17">Science & Nature</option>
+            <option value="27">Animals</option>
+            <option value="19">Mathematics</option>
+            <option value="18">Computers</option>
+            <option value="31">Anime & Manga</option>
+        </select>
+        <div>
+            <label for="difficulty">Difficulty</label>
+            <label for="easy">
+                <input type="radio" id="easy" name="difficulty"> Easy
+            </label> 
+            <label for="medium">
+                <input type="radio" id="medium" name="difficulty"> Medium
+            </label> 
+            <label for="hard">
+                <input type="radio" id="hard" name="difficulty"> Hard
+            </label>
+        </div>
+        <div>
+            <label for="nQuestions">Number Of Questions</label>
+            <input type="number" id="nQuestions">
+        </div>
+        <button id="startBtn" class="submit">Start Quiz</button>
+    </div>
+    <script src="index.js/index.js"></script>
+</body>
+</html>
